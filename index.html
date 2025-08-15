@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vertex Neaqual Technologies</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0a0a0a;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Neon Header */
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(90deg, #00f5ff, #ff00ff);
+      background-size: 200% 200%;
+      animation: gradientShift 6s infinite alternate;
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+    header img {
+      max-width: 120px;
+      margin-bottom: 10px;
+    }
+    header h1 {
+      font-size: 2.8em;
+      color: #fff;
+      text-shadow: 0 0 15px #00f5ff, 0 0 30px #ff00ff;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #d0d0d0;
+      text-shadow: 0 0 10px #00f5ff;
+    }
+
+    /* Fixed Vertical Nav */
+    nav {
+      position: fixed;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 15px;
+      border: 1px solid #00f5ff;
+      box-shadow: 0 0 10px #00f5ff;
+    }
+    nav a {
+      font-size: 1.4em;
+      font-family: monospace;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      color: #00f5ff;
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+    }
+    nav a:hover {
+      color: #ff00ff;
+      border-color: #ff00ff;
+      box-shadow: 0 0 15px #ff00ff;
+      transform: scale(1.2);
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2.5em;
+      color: #00f5ff;
+      text-shadow: 0 0 10px #00f5ff;
+    }
+    section p {
+      max-width: 700px;
+      margin: auto;
+      color: #ccc;
+      font-size: 1.1em;
+    }
+
+    /* Card Style */
+    .card-grid {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    .card {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid #00f5ff;
+      border-radius: 12px;
+      padding: 20px;
+      width: 300px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px #00f5ff;
+      text-align: center;
+    }
+    .card img {
+      max-width: 100px;
+      margin-bottom: 15px;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      border-color: #ff00ff;
+      box-shadow: 0 0 20px #ff00ff;
+    }
+
+    footer {
+      background-color: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #00f5ff;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Vertex Neaqual Logo">
+  <h1>Vertex Neaqual Technologies</h1>
+  <p>Shaping the Future with Neon Innovation</p>
+</header>
+
+<!-- Fixed Symbol Navigation -->
+<nav>
+  <a href="#home">◉</a>
+  <a href="#about">◆</a>
+  <a href="#services">▲</a>
+  <a href="#powerbase">✦</a>
+</nav>
+
+<section id="home">
+  <h2>Welcome</h2>
+  <p>Vertex Neaqual Technologies delivers cutting-edge tech solutions with futuristic design, empowering businesses and developers to achieve the extraordinary.</p>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>We combine innovation, design, and engineering to create solutions that redefine industries and inspire the next generation of technology leaders.</p>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Next-Gen Software</h3>
+      <p>Building advanced, scalable, and secure software for the digital age.</p>
+    </div>
+    <div class="card">
+      <h3>AI & Automation</h3>
+      <p>Developing intelligent systems that work smarter and faster for you.</p>
+    </div>
+  </div>
+</section>
+
+<section id="powerbase">
+  <h2>Our Flagship Product</h2>
+  <div class="card-grid">
+    <div class="card">
+      <img src="powerbase.png" alt="POWERBASE Logo">
+      <h3>POWERBASE</h3>
+      <p>A powerhouse for developers — the ultimate toolset that redefines productivity, speed, and efficiency in coding and development workflows.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Vertex Neaqual Technologies. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
